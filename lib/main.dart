@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/components/splash_screen.dart';
 import 'package:music_player/pages/home_page.dart';
 import 'package:music_player/pages/theme_provider.dart';
 import 'package:music_player/themes/dark_mode.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashScreen(),
       //theme: darkMode,
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
